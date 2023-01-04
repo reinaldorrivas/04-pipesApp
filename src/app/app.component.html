@@ -4,4 +4,22 @@
   <h1>{{ persona | json }}</h1>
 </div>
 
-<button pButton (click)="mostrarNombre()" label="Cambiar Nombre"></button>
+<div class="button">
+  <button
+  pButton
+  icon="pi pi-check"
+  iconPos="right"
+  (click)="mostrarNombre()"
+  label="Cambiar Nombre"
+  class="p-button p-button-help"
+></button>
+</div>
+
+<div class="card">
+  <p-card [header]="nombre | titlecase" [subheader]="cedula.toString()">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus, eius
+    modi unde ipsa ratione accusamus repellat similique, pariatur consequatur
+    tempora iste, aliquid eaque nesciunt optio nam itaque exercitationem
+    dolorum!
+  </p-card>
+</div>
